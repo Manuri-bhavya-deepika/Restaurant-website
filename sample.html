@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../res/sample.css" />
+    <script type="text/javascript" src="../res/sample.js"></script>
+</head>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#"><i class="fas fa-utensils"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="#book-table" class="btn btn-outline-secondary" type="submit">Book a Table</a>
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+    </nav>
+
+<!--home page-->
+<section id="home">
+  <div class="background-image">
+    <div class="overlay">
+      <h2>Welcome</h2>
+    </div>
+  </div>
+</section>
+
+<!--about page-->
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>About Us</h2>
+        <p>Welcome to a culinary experience like no other. Our passion for food and hospitality drives 
+        us to create unforgettable dining experiences for our guests.</p>
+        <p>we believe in using the finest ingredients sourced from local farmers and suppliers 
+        to ensure the highest quality in every dish we serve. Our talented team of chefs combines traditional techniques 
+        with innovative flavors to create a menu that celebrates both classic and contemporary cuisine.</p>
+        <p>Our cozy and elegant restaurant provides a warm and inviting atmosphere for you to enjoy your meal. 
+        Whether you're dining with friends, celebrating a special occasion, or simply looking for a delicious meal, we 
+        strive to make every visit a memorable one.</p>
+      </div>
+      <div class="img">
+        <img src="images/about.jpeg" alt="Restaurant Image" >
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--menu page-->
+<section id="menu">
+    <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu-buttons">
+            <button class="active" onclick="filterMenu('all')">All</button>
+            <button onclick="filterMenu('veg')">Vegetarian</button>
+            <button onclick="filterMenu('nonveg')">Non-Vegetarian</button>
+            <button onclick="filterMenu('starters')">Starters</button>
+        </div>
+        <div class="menu-items row">
+            <div class="menu-item col-md-4 veg">
+                <div class="item-box">
+                    <img src="../res/images/v1.jpeg" alt="Item Image">
+                    <p class="item-name">Kaju Paneer</p>
+                    <p class="item-price">Rs.550/-</p>
+                    <button class="btn btn-outline-primary" type="submit">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item col-md-4 nonveg">
+                <div class="item-box">
+                    <img src="../res/images/n4.jpg" alt="Item Image">
+                    <p class="item-name">Chicken Biryani</p>
+                    <p class="item-price">Rs.500/-</p>
+                    <button class="btn btn-outline-primary" type="submit">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item col-md-4 starters">
+                <div class="item-box">
+                    <img src="../res/images/s1.jpeg" alt="Item Image">
+                    <h3 class="item-name">Egg 65</h3>
+                    <p class="item-price">Rs.100/-</p>
+                    <button class="btn btn-outline-primary" type="submit">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item col-md-4 veg">
+                <div class="item-box">
+                    <img src="../res/images/v10.jpg" alt="Item Image">
+                    <p class="item-name">Kaju Curry</p>
+                    <p class="item-price">Rs.250/-</p>
+                    <button class="btn btn-outline-primary" type="submit">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item col-md-4 nonveg">
+                <div class="item-box">
+                    <img src="../res/images/n5.jpeg" alt="Item Image">
+                    <p class="item-name">Mutton Kofta</p>
+                    <p class="item-price">Rs.400/-</p>
+                    <button class="btn btn-outline-primary" type="submit">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item col-md-4 starters">
+                <div class="item-box">
+                    <img src="../res/images/s5.jpeg" alt="Item Image">
+                    <h3 class="item-name">Crispy Baby corn</h3>
+                    <p class="item-price">Rs.90/-</p>
+                    <button class="btn btn-outline-primary" type="submit">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item col-md-4 veg">
+                <div class="item-box">
+                    <img src="../res/images/v11.jpg" alt="Item Image">
+                    <p class="item-name">Aloo Gobi Matar</p>
+                    <p class="item-price">Rs.200/-</p>
+                    <button class="btn btn-outline-primary" type="submit">Add to Cart</button>
+                </div>           
+            </div>
+            <div class="menu-item col-md-4 nonveg">
+                <div class="item-box ">
+                    <img src="../res/images/n8.jpg" alt="Item Image">
+                    <p class="item-name">Fish Moilee</p>
+                    <p class="item-price">Rs.330/-</p>
+                    <button class="btn btn-outline-primary" type="submit">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item col-md-4 starters">
+                <div class="item-box ">
+                    <img src="../res/images/s8.jpeg" alt="Item Image">
+                    <h3 class="item-name">Chicken popcorn</h3>
+                    <p class="item-price">Rs.168/-</p>
+                    <button class="btn btn-outline-primary" type="submit">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--events page-->
+<section id="events">
+    <div class="container">
+        <!-- <div id="slideshow"> -->
+            <div class="slide-wrapper">
+                <div class="slide">
+                    <div class="slide-number">
+                        <img src="../res/images/e1.jpeg">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-number">
+                        <img src="../res/images/e2.jpeg">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-number">
+                        <img src="../res/images/e3.jpeg">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-number">
+                        <img src="../res/images/e4.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--book a table-->
+<section id="book-table">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2>Book a Table</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+              <label for="date">Date:</label>
+              <input type="date" class="form-control" id="date">
+            </div>
+            <div class="form-group">
+              <label for="time">Time:</label>
+              <input type="time" class="form-control" id="time">
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests:</label>
+              <select class="form-control" id="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!--contact page-->
+<section id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2>Contact Us</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
